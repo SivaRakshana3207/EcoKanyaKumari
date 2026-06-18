@@ -1,0 +1,41 @@
+:root {
+    --primary: #ffb703;
+    --dark: #121212;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    background: linear-gradient(180deg, #000 0%, #1a1a1a 100%);
+}
+
+.challenge-card {
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.challenge-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    border-color: var(--primary) !important;
+    box-shadow: 0 10px 30px rgba(255, 183, 3, 0.15);
+}
+
+.feedback-panel {
+    background: #1a1a1a;
+    backdrop-filter: blur(10px);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #222 !important;
+    border-color: var(--primary) !important;
+    color: white !important;
+    box-shadow: none;
+}
+
+.badge {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

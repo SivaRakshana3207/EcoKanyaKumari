@@ -1,0 +1,24 @@
+#messages { height: 75vh; overflow-y: auto; background: #1a1a1a; border-radius: 15px; }
+.message { margin-bottom: 15px; padding: 12px; border-radius: 10px; max-width: 90%; line-height: 1.5; }
+.bot { background: #333; color: white; align-self: flex-start; border-left: 4px solid #ffb703; }
+.user { background: #ffb703; color: black; align-self: flex-end; font-weight: bold; margin-left: auto; }
+
+.card-opt { 
+    background: #2a2a2a; border: 1px solid #ffb703; padding: 12px; 
+    border-radius: 8px; margin-top: 8px; cursor: pointer; transition: 0.3s; 
+}
+.card-opt:hover { background: #ffb703; color: black; transform: scale(1.02); }
+
+.itinerary-item { 
+    background: #222; padding: 20px; border-radius: 12px; 
+    margin-bottom: 30px; border-left: 6px solid #444; transition: 0.4s; 
+}
+.active-step { border-left-color: #ffb703; transform: scale(1.02); }
+.completed-step { opacity: 0.4; filter: grayscale(1); transform: scale(0.95); pointer-events: none; }
+.pending-step { opacity: 0.3; pointer-events: none; }
+
+.budget-tracker {
+    position: sticky; top: 0; z-index: 100; background: #ffb703; color: black;
+    padding: 10px; border-radius: 8px; text-align: center; font-weight: bold;
+}
+.map-link { color: #ffb703; text-decoration: underline; display: block; margin-top: 10px; }

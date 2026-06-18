@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoKanyaKumari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar" id="mainNav">
+    <div class="nav-container">
+        <div class="logo">
+            <a href="index.html">KanyaKumari<span>.AI</span></a>
+        </div>
+
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-item active">Home</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#places" class="nav-item">Places</a></li>
+            <li><a href="#foods" class="nav-item">Famous Foods</a></li>
+            <li><a href="#culture" class="nav-item">Culture</a></li>
+            <li><a href="#gallery" class="nav-item">Gallery</a></li>
+            <li><a href="./remakershub/index.html" class="nav-item">ReMakersHub</a></li>
+            <li><a href="./portal/portal.html" class="nav-item">Contibute</a></li>
+            <li><a href="./templates/plan.html" class="nav-btn">Plan Your Trip</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="home" class="home-hero">
+    <div class="parallax-bg"></div> <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+        <div class="hero-badge reveal">📍 The Edge of the World</div>
+        
+        <h1 class="hero-title">
+            Where Three Oceans <br> 
+            <span class="gradient-text">Whisper in One Voice.</span>
+        </h1>
+        <p class="hero-subtitle">
+            Stand at India’s southernmost tip and witness the sun and moon 
+            dance on the same horizon.
+        </p>
+
+        <div class="hero-search reveal">
+            <input type="text" id="userQuery" placeholder="Ask AI: 'Plan a 2-day spiritual journey...'">
+            <button onclick="startAi()" class="btn-primary">Generate My Trip</button>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <span>Scroll to Explore</span>
+    </div>
+</section>
+
+<section id="about" class="about-section">
+    <div class="about-container">
+        
+        <div class="about-text-content reveal-left">
+            <h4 class="top-label">THE SOUTHERNMOST MAINLAND TIP</h4>
+            <h2 class="main-heading">Discover the Soul of <br><span>Kanniyakumari</span></h2>
+            
+            <div class="description-block">
+                <p>Named after the Hindu goddess <strong>Devi Kanniyakumari</strong>, this geographically blessed destination is where three major water bodies converge in a sacred <em>Triveni Sangam</em>.</p>
+                <p>From the historic Cape Comorin to a modern cultural hub, it’s the only spot in India to witness the sun setting and moon rising simultaneously.</p>
+            </div>
+
+            <div class="feature-pills">
+                <div class="pill">🌊 Confluence of 3 Seas</div>
+                <div class="pill">🧘 Spiritual Nirvana</div>
+                <div class="pill">🏰 Historic Virtues</div>
+            </div>
+        </div>
+
+        <div class="about-visual-stack reveal-right">
+            <div class="live-weather-card">
+                <div class="weather-top">
+                    <span class="city">Kanniyakumari</span>
+                    <span class="dot-live"></span>
+                </div>
+                <div class="weather-body">
+                    <h1 id="temp-display">29°C</h1>
+                    <p id="condition-display">Sunny</p>
+                </div>
+                <div class="weather-meta">
+                    <span>Humidity: <b id="humidity-display">65%</b></span>
+                    <span>Wind: <b id="wind-display">12 km/h</b></span>
+                </div>
+            </div>
+
+            <div class="map-wrapper">
+                <img src="./assests/kn1.PNG" alt="TN Map" class="map-img">
+                <div class="map-marker"></div> 
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<section id="places" class="places-section">
+    <div class="section-header">
+        <span class="sub-heading">Explore the Wonders</span>
+        <h2 class="main-heading">Most Loved Destinations</h2>
+    </div>
+
+    <div class="places-grid">
+        <div class="place-card heritage reveal">
+            <div class="card-img">
+                <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-vivekananda-rock-memorial-kanyakumari-tamil-nadu-attr-hero?qlt=82&ts=1726654032533" alt="Vivekananda Rock">
+                <span class="time-badge">1-2 Hours</span>
+            </div>
+            <div class="card-info">
+                <h3>Vivekananda Rock Memorial</h3>
+                <p>The spot where Swami Vivekananda gained enlightenment, built on a rock in the Lakshadweep Sea.</p>
+                <a href="https://www.google.com/search?q=Vivekananda+Rock+Memorial+Kanyakumari" class="explore-link">Explore <i class="arrow">→</i></a>
+            </div>
+        </div>
+
+        <div class="place-card heritage reveal">
+            <div class="card-img">
+                <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-thiruvalluvar-statue-kanyakumari-tamil-nadu-attr-hero?qlt=82&ts=1726654155728" alt="Thiruvalluvar Statue">
+                <span class="time-badge">1 Hour</span>
+            </div>
+            <div class="card-info">
+                <h3>Thiruvalluvar Statue</h3>
+                <p>Standing at 41 meters, this stone masterpiece honors the legendary Tamil poet and philosopher.</p>
+                <a href="https://www.google.com/search?q=Thiruvalluvar+Statue+Kanyakumari" class="explore-link">Explore <i class="arrow">→</i></a>
+            </div>
+        </div>
+
+        <div class="place-card religious reveal">
+            <div class="card-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS12stUcq2wZFx5vy2u-SUvdXjOwtRRpuEf2w&s" alt="Kumari Amman Temple">
+                <span class="time-badge">2 Hours</span>
+            </div>
+            <div class="card-info">
+                <h3>Kumari Amman Temple</h3>
+                <p>An ancient temple dedicated to Goddess Devi Kanya Kumari, one of the 108 Shakti Peethas.</p>
+                <a href="https://www.google.com/search?q=Kumari+Amman+Temple+Kanyakumari" class="explore-link">Explore <i class="arrow">→</i></a>
+            </div>
+        </div>
+
+        <div class="place-card heritage reveal">
+            <div class="card-img">
+                <img src="https://avathioutdoors.gumlet.io/travelGuide/dev/kanyakumari_P7662.jpg" alt="Mathur Aqueduct">
+                <span class="time-badge">1-2 Hours</span>
+            </div>
+            <div class="card-info">
+                <h3>Mathur Aqueduct</h3>
+                <p>One of the longest and highest aqueducts in Asia, offering breathtaking views of lush greenery.</p>
+                <a href="https://www.google.com/search?q=Mathur+Aqueduct+Kanyakumari" class="explore-link">Explore <i class="arrow">→</i></a>
+            </div>
+        </div>
+
+        <div class="place-card beach reveal">
+            <div class="card-img">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/f7/ae/42/1468-largejpg.jpg?w=500&h=500&s=1" alt="Sanguthurai Beach">
+                <span class="time-badge">2+ Hours</span>
+            </div>
+            <div class="card-info">
+                <h3>Sanguthurai Beach</h3>
+                <p>A palm-fringed, pristine golden beach—perfect for a peaceful sunset and clean blue waters.</p>
+                <a href="https://www.google.com/search?q=Sanguthurai+Beach+Kanyakumari" class="explore-link">Explore <i class="arrow">→</i></a>
+            </div>
+        </div>
+
+        <div class="place-card religious reveal">
+            <div class="card-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpVB3bFtW8eax9RIZ9jBQfe8C4NvkZsIlkpw&s" alt="Ransom Church">
+                <span class="time-badge">1 Hour</span>
+            </div>
+            <div class="card-info">
+                <h3>Our Lady of Ransom Church</h3>
+                <p>A stunning Gothic architecture marvel built in the 15th century against the ocean backdrop.</p>
+                <a href="https://www.google.com/search?q=Our+Lady+of+Ransom+Church+Kanyakumari" class="explore-link">Explore <i class="arrow">→</i></a>
+            </div>
+        </div>
+
+        <div class="place-card heritage reveal">
+            <div class="card-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToPXC2h6daAEh9mEwCs3zhUgSBgMcDEIdLmw&s" alt="Gandhi Memorial">
+                <span class="time-badge">1 Hour</span>
+            </div>
+            <div class="card-info">
+                <h3>Mahatma Gandhi Memorial</h3>
+                <p>A peaceful shrine built where the Mahatma's ashes were kept before immersion in the sea.</p>
+                <a href="https://www.google.com/search?q=Mahatma+Gandhi+Memorial+Kanyakumari" class="explore-link">Explore <i class="arrow">→</i></a>
+            </div>
+        </div>
+
+        <div class="place-card religious reveal">
+            <div class="card-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUgyqv4MiVmu8u6Uw6RQiWR94DAuJ3QixRBQ&s" alt="Thanumalayan Temple">
+                <span class="time-badge">2-3 Hours</span>
+            </div>
+            <div class="card-info">
+                <h3>Thanumalayan Temple</h3>
+                <p>A sacred architectural marvel in Suchindram, dedicated to the Trinity: Brahma, Vishnu, and Shiva.</p>
+                <a href="https://www.google.com/search?q=Thanumalayan+Temple+Suchindram" class="explore-link">Explore <i class="arrow">→</i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="food" class="food-section">
+    <div class="section-header reveal">
+        <span class="sub-heading">Taste of Nanjil Nadu</span>
+        <h2 class="main-heading">Top Famous Foods You Must Try</h2>
+        <p>A unique fusion where coconut, seafood, and spices tell a thousand-year-old story.</p>
+    </div>
+
+    <div class="food-container">
+        <div class="food-card reveal">
+            <div class="food-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkmOKogYC-nhKy3wcnspsgz1feQn3WZ8IZ1g&s" alt="Fish Curry">
+                <span class="food-tag">Must Try</span>
+            </div>
+            <div class="food-info">
+                <h3>Nagercoil Meen Kulambu</h3>
+                <p>Authentic fish curry thickened with coconut. A staple in every Kanyakumari household.</p>
+                <div class="buy-info">📍 Best at: <strong>Sekar Mess, Nagercoil</strong></div>
+                <a href="https://www.google.com/maps/search/Sekar+Mess+Nagercoil" target="_blank" class="map-btn">📍 View on Map</a>
+            </div>
+        </div>
+
+        <div class="food-card reveal">
+            <div class="food-img">
+                <img src="https://ganguram.com/cdn/shop/files/banana-chips-1_f31bba50-74dc-45d6-b728-b2befe11cb2c.jpg?v=1756981450&width=480" alt="Banana Chips">
+            </div>
+            <div class="food-info">
+                <h3>Nendran Banana Chips</h3>
+                <p>Crispy slices of plantain fried in pure coconut oil. The ultimate southern snack.</p>
+                <div class="buy-info">📍 Best at: <strong>Ramalaxmi Sweets, Tower Junction</strong></div>
+                <a href="https://www.google.com/maps/search/Ramalaxmi+Sweets+Nagercoil+Tower+Junction" target="_blank" class="map-btn">📍 View on Map</a>
+            </div>
+        </div>
+
+        <div class="food-card reveal">
+            <div class="food-img">
+                <img src="https://www.kannammacooks.com/wp-content/uploads/nendram-pazham-bajji-kerala-pazham-pori-recipe-pic.jpg" alt="Pazha Bhaji">
+            </div>
+            <div class="food-info">
+                <h3>Pazha Bhaji (Pazham Pori)</h3>
+                <p>Ripe nendran bananas dipped in batter and fried till golden. Perfect with tea.</p>
+                <div class="buy-info">📍 Best at: <strong>Local Stalls, Nagercoil</strong></div>
+                <a href="https://www.google.com/maps/search/Tea+Stalls+Nagercoil+Municipal+Bus+Stand" target="_blank" class="map-btn">📍 View on Map</a>
+            </div>
+        </div>
+
+        <div class="food-card reveal">
+            <div class="food-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqXTjFjoi2IsK0zB9LZTWq4DP2LEGPyGrOgQ&s" alt="Sarbath">
+            </div>
+            <div class="food-info">
+                <h3>Nannari & Nungu Sarbath</h3>
+                <p>A refreshing summer drink made from medicinal herb roots and ice apple.</p>
+                <div class="buy-info">📍 Best at: <strong>Highway Stalls, Thiruvananthapuram Road</strong></div>
+                <a href="https://www.google.com/maps/search/Nungu+Sarbath+Stalls+Kanyakumari+Highway" target="_blank" class="map-btn">📍 View on Map</a>
+            </div>
+        </div>
+
+        <div class="food-card reveal">
+            <div class="food-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZSc-zIOvcjuH8kxVzFo0QCrKv3e1G14Q9lg&s" alt="Kappa">
+            </div>
+            <div class="food-info">
+                <h3>Maravazhi Kizhangu (Tapioca)</h3>
+                <p>Steamed tapioca served with spicy fish curry. A hearty local breakfast.</p>
+                <div class="buy-info">📍 Best at: <strong>Sekar's Kitchen, Nagercoil</strong></div>
+                <a href="https://www.google.com/maps/search/Sekar's+Kitchen+Nagercoil" target="_blank" class="map-btn">📍 View on Map</a>
+            </div>
+        </div>
+
+        <div class="food-card reveal">
+            <div class="food-img">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU1iEDF7H-6sBZwUGT_zscgiTny-QD5prs5w&s" alt="Rasa Vadai">
+            </div>
+            <div class="food-info">
+                <h3>Nanjil Rasa Vadai</h3>
+                <p>Lentil fritters soaked in peppery, hot rasam until they melt-in-your-mouth.</p>
+                <div class="buy-info">📍 Best at: <strong>Hotel Gowri Sankar, Nagercoil</strong></div>
+                <a href="https://www.google.com/maps/search/Hotel+Gowri+Sankar+Nagercoil" target="_blank" class="map-btn">📍 View on Map</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="culture" class="culture-premium">
+    <div class="culture-overlay"></div>
+    
+    <div class="culture-container">
+        <div class="culture-sidebar reveal-left">
+            <div class="tradition-pill">SINCE THE 9TH CENTURY</div>
+            <h2 class="culture-title">The Soul of <br><span>Nanjil Nadu</span></h2>
+            <p class="culture-desc">
+                A sacred confluence of Tamil folk energy and the royal elegance of the Travancore era. 
+                Experience the heartbeat of the South.
+            </p>
+            
+            <div class="instrument-showcase">
+                <div class="inst-item"><span>🥁</span> Udukku Drum</div>
+                <div class="inst-item"><span>🏺</span> Kudam Pot</div>
+                <div class="inst-item"><span>🏹</span> Villu Bow</div>
+            </div>
+        </div>
+
+        <div class="culture-main reveal-right">
+            
+            <div class="art-card">
+                <div class="art-number">01</div>
+                <div class="art-image">
+                    <img src="https://i.ytimg.com/vi/WPoc1c-pRXk/hq720.jpg" alt="Villuppattu">
+                </div>
+                <div class="art-text">
+                    <h3>Villuppattu <span class="badge">Most Popular</span></h3>
+                    <p>The "Bow Song" is a 1000-year-old storytelling art. A 7-foot bow is used to narrate stories of heroic local deities.</p>
+                    <div class="culture-actions">
+                        <a href="https://www.google.com/search?q=upcoming+Villupattu+events+Kanyakumari" target="_blank" class="event-link">📅 Next Event: Temple Festivals (Mar-May)</a>
+                        <a href="https://www.youtube.com/results?search_query=Villupattu+Kanyakumari+performance" target="_blank" class="yt-link">▶ Watch on YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <div class="art-number">02</div>
+                <div class="art-image">
+                    <img src="https://arts.mojarto.com/productImages/MA267480/primary/343/MA267480.jpeg" alt="Karakattam">
+                </div>
+                <div class="art-text">
+                    <h3>Karakattam</h3>
+                    <p>An ancient folk dance where performers balance decorated bronze pots (Karakam) on their heads while dancing to the Thavil and Nadaswaram.</p>
+                    <div class="culture-actions">
+                        <a href="https://www.google.com/search?q=Mandaikadu+Kodai+Festival+2025+dates" target="_blank" class="event-link">📅 Next Event: Mandaikadu Kodai (March)</a>
+                        <a href="https://www.youtube.com/results?search_query=Karakattam+Kanyakumari+temple+festival" target="_blank" class="yt-link">▶ Watch on YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art-card">
+                <div class="art-number">03</div>
+                <div class="art-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLHFnQt6z4kh6j4fQbb1OKUFxPRXx5Hvy4_Q&s" alt="Oyilattam">
+                </div>
+                <div class="art-text">
+                    <h3>Oyilattam</h3>
+                    <p>The "Dance of Grace." Men dance in a row with colored handkerchiefs, keeping rhythm with bells on their ankles (Salangai).</p>
+                    <div class="culture-actions">
+                        <a href="https://www.google.com/search?q=Kumari+Thiruvizha+2025+schedule" target="_blank" class="event-link">📅 Next Event: Kumari Thiruvizha (May)</a>
+                        <a href="https://www.youtube.com/results?search_query=Oyilattam+Kanyakumari+dance" target="_blank" class="yt-link">▶ Watch on YouTube</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="best-time" class="season-section">
+    <div class="section-header reveal">
+        <span class="sub-heading">Planning Your Trip</span>
+        <h2 class="main-heading">When to Visit Kanyakumari</h2>
+        <p class="section-desc">Kanyakumari is an all-year-round destination, but every season tells a different story.</p>
+    </div>
+
+    <div class="season-grid">
+        <div class="season-card peak reveal">
+            <div class="season-badge">Recommended</div>
+            <div class="season-icon">☀️</div>
+            <h3>Oct - Mar</h3>
+            <span class="status">Peak Season</span>
+            <div class="divider"></div>
+            <p><strong>Expect:</strong> Pleasant weather with significantly lower humidity and clear blue skies.</p>
+            <p><strong>You'll Love:</strong> Perfect conditions for beach hopping, ferry rides, and the Cape Comorin Festival.</p>
+        </div>
+
+        <div class="season-card moderate reveal">
+            <div class="season-icon">🌤️</div>
+            <h3>Apr - Jun</h3>
+            <span class="status">Moderate Season</span>
+            <div class="divider"></div>
+            <p><strong>Expect:</strong> Warm tropical days. Great for those who enjoy the vibrant summer sun.</p>
+            <p><strong>You'll Love:</strong> Watching the spectacular Chithra Pournami (Sun and Moon facing each other).</p>
+        </div>
+
+        <div class="season-card off reveal">
+            <div class="season-icon">🌧️</div>
+            <h3>Jul - Sep</h3>
+            <span class="status">Off-Season</span>
+            <div class="divider"></div>
+            <p><strong>Expect:</strong> Refreshing monsoon rains and lush green landscapes throughout the district.</p>
+            <p><strong>You'll Love:</strong> The dramatic clouds over the ocean and the gushing waterfalls at their fullest.</p>
+        </div>
+    </div>
+
+    <div class="festival-strip reveal">
+        <div class="fest-content">
+            <span>🎉 Local Highlight</span>
+            <p>Don't miss the <strong>Cape Comorin Festival</strong> in October—a 3-day cultural extravaganza!</p>
+        </div>
+    </div>
+</section>
+
+<section id="reach" class="reach-section">
+    <div class="section-header">
+        <span class="sub-heading">Plan Your Journey</span>
+        <h2 class="main-heading">How to Reach Kanyakumari</h2>
+    </div>
+
+    <div class="booking-container">
+        <div class="booking-header">
+            <h2>Book Your Trip to Kanyakumari</h2>
+            <div class="origin-selector">
+                <span>From</span>
+                <select id="citySelect" onchange="updateTravelOptions()">
+                    <option value="mumbai">Mumbai</option>
+                    <option value="delhi">Delhi</option>
+                    <option value="chennai">Chennai</option>
+                    <option value="bangalore">Bangalore</option>
+                    <option value="hyderabad">Hyderabad</option>
+                    <option value="kochi">Kochi</option>
+                    <option value="trivandrum">Trivandrum</option>
+                    <option value="madurai">Madurai</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="travel-options-label">
+            <div>
+                <h3>✈️ Travel Options to reach Kanyakumari</h3>
+                <p>Our Recommendations</p>
+            </div>
+        </div>
+
+        <div id="optionsWrapper" class="options-wrapper">
+            <div class="option-card">
+                <div class="route-info">
+                    <div class="route-icon">🧳</div>
+                    <div class="route-text">Flight to TRV Airport, then Private Car to Kanyakumari</div>
+                </div>
+                <div class="price-action">
+                    <div class="price-tag">
+                        <small>Booking Options Starting From</small>
+                        <span>₹8,240</span>
+                    </div>
+                    <a href="https://www.makemytrip.com/tripideas/places/kanyakumari" class="book-btn">BOOK NOW</a>
+                </div>
+            </div>
+            
+            <div class="option-card">
+                <div class="route-info">
+                    <div class="route-icon">🚂</div>
+                    <div class="route-text">Direct Train to Kanyakumari Station</div>
+                </div>
+                <div class="price-action">
+                    <div class="price-tag">
+                        <small>Booking Options Starting From</small>
+                        <span>₹1,250</span>
+                    </div>
+                    <a href="https://www.makemytrip.com/tripideas/places/kanyakumari" class="book-btn">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="gallery" class="gallery-geometric">
+    <div class="section-header reveal">
+        <span class="sub-heading">Visual Journal</span>
+        <h2 class="main-heading">Snapshots of Kanyakumari</h2>
+        <p>A perfectly aligned, symmetric grid capturing the spirit of the Southern Tip.</p>
+    </div>
+
+    <div class="geometric-grid">
+        
+        <div class="geo-item reveal">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-vivekananda-rock-memorial-kanyakumari-tamil-nadu-attr-hero?qlt=82&ts=1726654032533" alt="Vivekananda Rock Memorial">
+            <div class="geo-overlay"><span>Vivekananda Rock</span></div>
+        </div>
+
+        <div class="geo-item reveal">
+            <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-thiruvalluvar-statue-kanyakumari-tamil-nadu-attr-hero?qlt=82&ts=1726654155728" alt="Thiruvalluvar Statue">
+            <div class="geo-overlay"><span>Thiruvalluvar Statue</span></div>
+        </div>
+
+        <div class="geo-item reveal">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/3e/ba/dc/vivekananda-rock.jpg?w=1200&h=-1&s=1" alt="Sunrise">
+            <div class="geo-overlay"><span>Sunrise Triveni Sangam</span></div>
+        </div>
+
+        <div class="geo-item reveal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8gyGInsMP4Y00FJZ-3HqciN5YZ8Px_kN_Hw&s" alt="Coastline">
+            <div class="geo-overlay"><span>Lush Coastline View</span></div>
+        </div>
+
+        <div class="geo-item reveal">
+            <img src="https://preview.redd.it/this-temple-is-known-for-wonders-like-musical-pillars-1-v0-jpph1wgbr6051.jpg?width=640&crop=smart&auto=webp&s=8536f49737ccd6046b8dae403e5ea03c1f9f8d1f" alt="Temple Architecture">
+            <div class="geo-overlay"><span>Suchindram Temple Architecture</span></div>
+        </div>
+
+        <div class="geo-item reveal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtJj6y8JJ71JQbjjWLPoKuwPd7hyKF43uTww&s" alt="Ransom Church">
+            <div class="geo-overlay"><span>Our Lady of Ransom Church</span></div>
+        </div>
+
+        <div class="geo-item reveal">
+            <img src="https://southguruholidays.com/wp-content/uploads/2025/08/Kanyakumari-Vivekananda-Rock-Memorial-Ferry-Tickets-Now-Available-Online-min.jpg" alt="Boats">
+            <div class="geo-overlay"><span>Nanjil Fishing Culture</span></div>
+        </div>
+
+        <div class="geo-item reveal">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKNnG3aO4Vs3vIKWdicdovPAvZcA85AQ3o1w&s" alt="Sunset">
+            <div class="geo-overlay"><span>Spectacular Sunset Views</span></div>
+        </div>
+
+    </div>
+</section>
+
+<section id="plan-trip" class="single-plan-section">
+    <div class="plan-hero-card reveal">
+        <div class="plan-hero-overlay"></div>
+        <div class="plan-hero-content">
+            <span class="plan-label">EXPERIENCE THE EDGE OF INDIA</span>
+            <h2 class="plan-hero-title">Your Journey, <br>Personalized by AI.</h2>
+            <p class="plan-hero-desc">
+                From the sunrise at Triveni Sangam to the taste of Nanjil Meen Kulambu, 
+                let's build your perfect Kanyakumari itinerary in seconds.
+            </p>
+            <div class="plan-action-area">
+                <a href="./templates/plan.html" class="plan-main-btn">Start Planning Now ➔</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="hotels" class="premium-hotels">
+    <div class="container">
+        <div class="section-intro reveal">
+            <span class="badge">Stay In Luxury</span>
+            <h2 class="ultra-heading"> <span>The Finest Stays at The Edge</span></h2>
+        </div>
+
+        <div class="hotel-luxury-grid">
+            <div class="luxury-card reveal" data-star="3">
+                <div class="card-inner">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&q=80&w=600" alt="Hotel">
+                        <div class="price-overlay">₹2,500<span>/night</span></div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="stars">★★★☆☆</div>
+                        <h3>Hotel Tamil Nadu</h3>
+                        <p>Iconic government-run stay with the best sunrise views from the balcony.</p>
+                        <a href="https://ttdconline.com/booking/index.php" target="_blank" class="book-link">Reserve Suite <span>→</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="luxury-card reveal" data-star="4">
+                <div class="card-inner">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=600" alt="Resort">
+                        <div class="price-overlay">₹5,800<span>/night</span></div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="stars">★★★★☆</div>
+                        <h3>Sparsa Resorts</h3>
+                        <p>An eco-sensitive resort blending modern luxury with spiritual tranquility.</p>
+                        <a href="https://www.sparsaresorts.com/kanyakumari/" target="_blank" class="book-link">Reserve Suite <span>→</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="luxury-card reveal" data-star="5">
+                <div class="card-inner">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=600" alt="Luxury">
+                        <div class="price-overlay">₹12,500<span>/night</span></div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="stars">★★★★★</div>
+                        <h3>Anantya Resorts</h3>
+                        <p>Lush lakeside villas offering a private escape into nature's lap.</p>
+                        <a href="https://www.anantyaresorts.com/" target="_blank" class="book-link">Reserve Suite <span>→</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="luxury-card reveal" data-star="5">
+                <div class="card-inner">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&q=80&w=600" alt="Spa">
+                        <div class="price-overlay">₹9,200<span>/night</span></div>
+                    </div>
+                    <div class="content-wrapper">
+                        <div class="stars">★★★★★</div>
+                        <h3>Annai Resorts & Spa</h3>
+                        <p>Premium spa retreat with an infinity pool overlooking the Laccadive Sea.</p>
+                        <a href="https://annairesorts.com/" target="_blank" class="book-link">Reserve Suite <span>→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="transit" class="transit-premium py-5">
+  <div class="container">
+
+    <div class="text-center mb-5 reveal">
+      <h2 class="ultra-heading">Seamless <span>Mobility</span></h2>
+    </div>
+
+    <div class="grid">
+
+      <!-- Bus -->
+      <div class="transit-card reveal-left">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&q=80&w=600">
+          <span class="price">Starts ₹850</span>
+        </div>
+        <div class="content">
+          <h3>Intercity Sleeper</h3>
+          <p>Comfortable AC sleeper buses from major cities.</p>
+          <a href="https://www.makemytrip.com/bus-tickets/" class="btn">Book Now →</a>
+        </div>
+      </div>
+
+      <!-- Cab -->
+      <div class="transit-card highlight reveal">
+        <div class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=600">
+          <span class="price gold">₹4,500/day</span>
+        </div>
+        <div class="content">
+          <h3>Private Cab</h3>
+          <p>Luxury cars for full trip comfort & sightseeing.</p>
+          <a href="https://www.makemytrip.com/cabs/" class="btn">Book Fleet →</a>
+        </div>
+      </div>
+
+      <!-- Guides -->
+      <div class="guide-box reveal-right">
+        <h4>🌟 Local Guides</h4>
+        <p class="small">Discover hidden stories with experts.</p>
+
+        <div class="guide">
+          <img src="https://i.pravatar.cc/150?u=2">
+          <div>
+            <h6>Ravi <span>✔</span></h6>
+            <small>History Expert • ₹1200/day</small>
+          </div>
+          <button>Hire</button>
+        </div>
+
+        <div class="guide">
+          <img src="https://i.pravatar.cc/150?u=1">
+          <div>
+            <h6>Meera <span>✔</span></h6>
+            <small>Food Expert • ₹1000/day</small>
+          </div>
+          <button>Hire</button>
+        </div>
+
+        <div class="guide">
+          <img src="https://i.pravatar.cc/150?u=3">
+          <div>
+            <h6>Rani <span>✔</span></h6>
+            <small>Travel Expert • ₹1800/day</small>
+          </div>
+          <button>Hire</button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="clean-footer">
+    <div class="footer-wrapper">
+        <div class="footer-top">
+            <div class="footer-brand-info">
+                <h2 class="footer-logo">KanyaKumari<span>.AI</span></h2>
+                <p>The definitive digital guide to the Southernmost tip of India. Discover culture, food, and soul.</p>
+            </div>
+            
+            <div class="footer-nav">
+                <div class="nav-col">
+                    <h4>Explore</h4>
+                    <a href="#places">Places</a>
+                    <a href="#food">Food</a>
+                    <a href="#culture">Culture</a>
+                </div>
+                <div class="nav-col">
+                    <h4>Travel</h4>
+                    <a href="#reach">How to Reach</a>
+                    <a href="#best-time">Best Time</a>
+                    <a href="plan.html">Planner</a>
+                </div>
+                <div class="nav-col">
+                    <h4>Connect</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Support</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom-line">
+            <p>&copy; 2026 KanyaKumari.AI | All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

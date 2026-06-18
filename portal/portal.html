@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Governance | EcoKanyaKumari</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="portal.css">
+</head>
+<body class="bg-black text-light">
+
+    <section class="hero-section text-center py-5 border-bottom border-warning">
+        <div class="container animate__animated animate__fadeIn">
+            <h1 class="display-3 fw-bold text-warning">Open Source Governance</h1>
+            <p class="lead text-secondary">Did you visit Kanyakumari? Spot a problem. Propose a solution. Get rewarded.</p>
+            <div class="d-flex justify-content-center gap-3 mt-4">
+                <button class="btn btn-warning btn-lg fw-bold" onclick="scrollToSection('report')">Report Problem</button>
+                <button class="btn btn-outline-warning btn-lg fw-bold" onclick="scrollToSection('solve')">Browse Challenges</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <div class="row g-5">
+            
+            <div class="col-lg-8 border-end border-secondary" id="solve">
+                <h2 class="mb-4 text-warning animate__animated animate__slideInLeft">Active Challenges 🏛️</h2>
+                <div id="challenge-feed">
+                    <div class="challenge-card p-4 mb-3 rounded border border-secondary bg-dark animate__animated animate__zoomIn">
+                        <div class="d-flex justify-content-between">
+                            <span class="badge bg-danger mb-2">High Impact</span>
+                            <span class="text-warning">Reward: ₹5000 / 1k Pts</span>
+                        </div>
+                        <h4>Smart Waste Management at Sunrise Point</h4>
+                        <p class="text-secondary">Tourists face issues with overflowing bins during peak hours. We need an IoT-based sensor solution or a better logistics model.</p>
+                        <button class="btn btn-sm btn-outline-warning mt-2" onclick="openContribute()">Contribute Solution</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4" id="report">
+                <div class="sticky-top" style="top: 20px;">
+                    <div class="feedback-panel p-4 rounded shadow-lg border border-warning animate__animated animate__fadeInRight">
+                        <h3 class="text-warning mb-3">Feedback & Issues</h3>
+                        <p class="small text-secondary">Saw something that could be better in Kanyakumari? Tell us.</p>
+                        
+                        <div class="mb-3">
+                            <label class="form-label small">Where was the issue?</label>
+                            <select id="location" class="form-select bg-dark text-light border-secondary">
+                                <option>Vivekananda Rock</option>
+                                <option>Nagercoil Market</option>
+                                <option>Sunset Point</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label small">The Problem</label>
+                            <input type="text" id="probTitle" class="form-control bg-dark text-light border-secondary" placeholder="Brief title">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label small">Description</label>
+                            <textarea id="probDesc" class="form-control bg-dark text-light border-secondary" rows="3" placeholder="Explain what happened..."></textarea>
+                        </div>
+
+                        <button class="btn btn-warning w-100 fw-bold py-2" onclick="submitProblem()">Post Challenge</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="portal.js"></script>
+</body>
+</html>
